@@ -17,5 +17,3 @@ class Product(Base):
 
     category = relationship("Category", back_populates="products")
 
-    def __repr__(self):
-        return f"Category: id={self.id}, name={self.name}, price={self.price}"

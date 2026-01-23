@@ -11,6 +11,3 @@ class Category(Base):
     slug: Mapped[str] = mapped_column(String, unique=True, nullable=False, index=True)
 
     products = relationship("Product", back_populates="category")
-
-    def __repr__(self):
-        return f"Category: id={self.id}, name={self.name}"
