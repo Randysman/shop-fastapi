@@ -13,7 +13,10 @@ Django==5.2
 django-rest-framework==0.1.0
 djangorestframework==3.16.1
 dotenv==0.9.9
+flake8==7.3.0
+isort==7.0.0
 kombu==5.5.4
+mccabe==0.7.0
 mypy==1.18.2
 mypy_extensions==1.1.0
 packaging==24.2
@@ -21,9 +24,11 @@ pathspec==0.12.1
 platformdirs==4.5.0
 prompt_toolkit==3.0.52
 psycopg2==2.9.11
+pycodestyle==2.14.0
 pydantic==2.12.5
 pydantic-settings==2.12.0
 pydantic_core==2.41.5
+pyflakes==3.4.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.1
 python-git==2018.2.1
