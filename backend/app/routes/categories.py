@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 from typing import List
-from backend.app.database import get_db
-from backend.app.services.category_service import CategoryService
-from backend.app.schemeas.category import CategoryResponse
+from ..database import get_db
+from ..services.category_service import CategoryService
+from ..schemas.category import CategoryResponse
 
 
 router = APIRouter(

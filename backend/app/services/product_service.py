@@ -1,11 +1,8 @@
 from sqlalchemy.orm import Session
 from typing import List
-
-from unicodedata import category
-
-from backend.app.repostitories.product_repository import ProductRepository
-from backend.app.repostitories.category_repository import CategoryRepository
-from backend.app.schemeas.product import ProductResponse, ProductCreate, ProductListResponse
+from ..repositories.product_repository import ProductRepository
+from ..repositories.category_repository import CategoryRepository
+from ..schemas.product import ProductResponse, ProductListResponse, ProductCreate
 from fastapi import HTTPException, status
 
 

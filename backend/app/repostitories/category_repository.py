@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from backend.app.models.category import Category
-from backend.app.schemeas.category import CategoryCreate
+from ..models.category import Category
+from ..schemas.category import CategoryCreate
 
 
 class CategoryRepository:
