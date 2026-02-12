@@ -23,3 +23,4 @@ app.mount("/static", StaticFiles(directory=settings.static_dir), name="static")
 @app.get("/")
 def root():
     return {"message": "Добро пожаловать!"}
+
