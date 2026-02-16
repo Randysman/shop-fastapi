@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import Dict
 from ..database import get_db
 from ..services.cart_service import CartService
-from ..schemas.cart import CartItemCreate, CartItemUpdate, CartResponse
+from ..schemeas.cart import CartItemCreate, CartItemUpdate, CartResponse
 from pydantic import BaseModel
 
 

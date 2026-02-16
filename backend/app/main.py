@@ -23,7 +23,7 @@ app.include_router(prod_router)
 app.include_router(cat_router)
 app.include_router(cart_router)
 
-@app.on_event("startapp")
+@app.on_event("startup")
 def on_start_up():
     init_db()
 
