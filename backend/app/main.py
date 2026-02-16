@@ -19,8 +19,18 @@ app.add_middleware(CORSMiddleware, allow_origins=settings.cors_origins,
 
 app.mount("/static", StaticFiles(directory=settings.static_dir), name="static")
 
+app.include_router(prod_router)
+app.include_router(cat_router)
+app.include_router(cart_router)
+
+@app.on_event("startapp")
+def on_start_up():
+    init_db()
 
 @app.get("/")
 def root():
     return {"message": "Добро пожаловать!"}
 
+@app.get("/health")
+def check_health():
+    return {"status": "health"}
