@@ -14,7 +14,7 @@ app = FastAPI(
 )
 
 app.add_middleware(CORSMiddleware, allow_origins=settings.cors_origins,
-                   allow_credential=True, allow_methods=["*"],
+                   allow_credentials=True, allow_methods=["*"],
                    allow_headers=["*"])
 
 app.mount("/static", StaticFiles(directory=settings.static_dir), name="static")
